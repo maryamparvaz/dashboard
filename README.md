@@ -1,5 +1,7 @@
 # Interactive Dashboard Design
 
+[Demo Project](https://dashboard-ruddy-six.vercel.app/dashboard)
+
 ## Project Overview
 
 This project focuses on building a modern and user-friendly interactive dashboard that allows users to visualize and interact with data. The dashboard includes a navigation menu, a filterable data table, a sidebar with configurable parameters, and dynamic charting functionality.
