@@ -1,6 +1,6 @@
 # Interactive Dashboard Design
 
-[Demo Project](https://dashboard-2-two.vercel.app/)
+[Demo Project](https://dashboard-3-sepia.vercel.app/)
 
 ## Project Overview
 
