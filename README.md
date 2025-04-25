@@ -1,6 +1,6 @@
 # Interactive Dashboard Design
 
-[Demo Project](https://dashboard-ruddy-six.vercel.app)
+[Demo Project](https://dashboard-2-two.vercel.app/)
 
 ## Project Overview
 
