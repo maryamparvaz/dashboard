@@ -1,73 +1,122 @@
-# Welcome to your Lovable project
+Interactive Dashboard Design
+Project Overview
+This project focuses on building a modern and user-friendly interactive dashboard that allows users to visualize and interact with data. The dashboard includes a navigation menu, a filterable data table, a sidebar with configurable parameters, and dynamic charting functionality.
 
-## Project info
+Key Features:
+Top or Side Navigation Menu: Includes four main items: "Home", "Reports", "Charts", "Settings".
 
-**URL**: https://lovable.dev/projects/e3096db9-4a2e-493b-b90c-1fea74087a79
+Data Table: Displays data from a CSV file, with columns such as "Name", "Date", and "Value". The table is filterable to improve user experience.
 
-## How can I edit this code?
+Sidebar: Contains a list of additional parameters (e.g., "New Value", "New Date", "Category"). These parameters can be dragged and dropped into the data table to dynamically add new columns.
 
-There are several ways of editing your application.
+Dynamic Chart: Based on the updated table data, a dynamic chart (such as a bar chart or line chart) is generated for data visualization and better analysis.
 
-**Use Lovable**
+Installation
+Prerequisites:
+Node.js (v14.x or higher)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/e3096db9-4a2e-493b-b90c-1fea74087a79) and start prompting.
+npm or yarn
 
-Changes made via Lovable will be committed automatically to this repo.
+Steps to Set Up the Project:
+Clone the repository:
 
-**Use your preferred IDE**
+bash
+Copy
+Edit
+git clone <repository-url>
+cd <project-directory>
+Install the dependencies: Using npm:
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+bash
+Copy
+Edit
+npm install
+Or using yarn:
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+bash
+Copy
+Edit
+yarn install
+Start the development server: Using npm:
 
-Follow these steps:
+bash
+Copy
+Edit
+npm start
+Or using yarn:
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+bash
+Copy
+Edit
+yarn start
+Open the dashboard in your browser by visiting http://localhost:3000.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Project Structure
+/src: Main source directory containing all components, styles, and utilities.
 
-# Step 3: Install the necessary dependencies.
-npm i
+/components: Reusable components like the sidebar, table, and chart.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+/assets: Images or assets used throughout the project.
 
-**Edit a file directly in GitHub**
+/data: CSV files or mock data.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+/utils: Helper functions for data manipulation or formatting.
 
-**Use GitHub Codespaces**
+Features
+1. Navigation Menu:
+The dashboard features a responsive navigation bar that allows users to access different sections of the app (Home, Reports, Charts, and Settings).
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+The menu can be positioned either at the top or on the side of the page, providing flexibility in design.
 
-## What technologies are used for this project?
+2. Data Table:
+The data table displays data from a CSV file with columns like "Name", "Date", and "Value".
 
-This project is built with:
+Users can filter data in the table to view specific records.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+The table is dynamic, with new columns being added based on the parameters dragged from the sidebar.
 
-## How can I deploy this project?
+3. Sidebar:
+The sidebar contains configurable parameters that users can drag into the data table.
 
-Simply open [Lovable](https://lovable.dev/projects/e3096db9-4a2e-493b-b90c-1fea74087a79) and click on Share -> Publish.
+Users can select parameters like "New Value", "New Date", "Category", etc., to update the table's content.
 
-## Can I connect a custom domain to my Lovable project?
+4. Drag and Drop Functionality:
+Users can drag one or more parameters from the sidebar and drop them into the table to dynamically add new columns.
 
-Yes, you can!
+5. Dynamic Chart:
+As users modify the data in the table, a chart (bar chart or line chart) will be generated and updated dynamically to visually represent the data for better analysis.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+The chart adapts based on the table's current data, providing an insightful view of the dataset.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Technologies Used
+React: For building the user interface and components.
+
+React DnD: For implementing the drag-and-drop functionality between the sidebar and the table.
+
+Chart.js or Recharts: For generating dynamic charts based on the table data.
+
+CSV Parsing: To read and parse data from CSV files into the table.
+
+CSS/SCSS: For styling the dashboard and ensuring responsiveness.
+
+Usage
+Filter the Data: Use the filter functionality in the data table to search for specific records.
+
+Add Columns: Drag and drop parameters from the sidebar into the data table to add new columns dynamically.
+
+View the Chart: As you modify the data in the table, the chart will update automatically to reflect the changes.
+
+Navigate through the Menu: Use the navigation menu to explore different sections like Home, Reports, Charts, and Settings.
+
+Contributing
+We welcome contributions to this project! If you'd like to contribute, please follow these steps:
+
+Fork the repository.
+
+Create a new branch (git checkout -b feature-name).
+
+Make your changes and commit them (git commit -am 'Add new feature').
+
+Push to the branch (git push origin feature-name).
+
+Open a pull request with a description of your changes.
